@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Dr. A.P.J. Abdul Kalam</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .half-screen-image {
+            position: relative;
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin: 0;
+        }
+        .half-screen-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.5s ease;
+        }
+        .half-screen-image img:hover {
+            transform: scale(1.1);
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            margin: 20px 0;
+            color: #f5f5f5;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10%;
+            margin: 10px 0;
+            transition: transform 0.5s ease;
+
+        }
+        .section img:hover {
+            transform: scale(1.05);
+        }
+        .text {
+            text-align: justify;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .quote {
+            font-style: italic;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .achievements-list {
+            list-style: none;
+            padding: 0;
+        }
+        .achievements-list li {
+            margin-bottom: 10px;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        .slide-in-left {
+            transform: translateX(-100%);
+            animation: slideInLeft 1.5s forwards;
+        }
+        .slide-in-right {
+            transform: translateX(100%);
+            animation: slideInRight 1.5s forwards;
+        }
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 2s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideInLeft {
+            to {
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInRight {
+            to {
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Responsive Design */
+        @media (min-width: 600px) {
+            .container {
+                width: 80%;
+            }
+            .section {
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+            .section img {
+                width: 45%;
+                margin: 10px;
+            }
+            .text {
+                width: 50%;
+            }
+        }
+        @media (min-width: 768px) {
+            .container {
+                width: 70%;
+            }
+        }
+        @media (min-width: 992px) {
+            .container {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="half-screen-image">
+        <img src="https://i.ytimg.com/vi/0ysrpOB45dE/maxresdefault.jpg" alt="Dr. Kalam Speaking">
+    </div>
+    <div class="container">
+        <h1 class="fade-in">Tribute to Dr. A.P.J. Abdul Kalam</h1>
+        
+        <div class="section">
+            <h2 class="slide-in-left">Early Life</h2>
+            <img src="https://th.bing.com/th/id/OIP.ZTBml5gigHI5YRT-FIgJEgHaIp?w=157&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Young Abdul Kalam" class="fade-in">
+            <p class="text fade-in">Dr. A.P.J. Abdul Kalam was born on 15th October 1931 in Rameswaram, Tamil Nadu, India. He was the youngest of five siblings and lived in a modest household. His early education was at Schwartz Higher Secondary School in Ramanathapuram. Later, he went on to study physics at St. Joseph's College, Tiruchirappalli, and aerospace engineering at the Madras Institute of Technology (MIT).</p>
+            
+        </div>
+
+        
+        <div class="section">
+            <h2 class="slide-in-right">Motivational Words</h2>
+            <img  src="https://th.bing.com/th/id/OIP.Xs-eTO0NTK3bu6rrsMG3jQHaD8?rs=1&pid=ImgDetMain" alt="Dr. Kalam Speaking" class="fade-in">
+            <p class="quote fade-in-up">"Dream, dream, dream. Dreams transform into thoughts and thoughts result in action."</p>
+            <p class="quote fade-in-up">"To succeed in your mission, you must have single-minded devotion to your goal."</p>
+            <p class="quote fade-in-up">"Don't take rest after your first victory because if you fail in second, more lips are waiting to say that your first victory was just luck."</p>
+        </div>
+        
+        <div class="section">
+            <h2 class="slide-in-left">Achievements</h2>
+            <ul class="achievements-list fade-in">
+                <li>Missile Man of India: Key role in India's civilian space program and military missile development.</li>
+                <li>Bharat Ratna: India’s highest civilian honor, awarded in 1997.</li>
+                <li>Author: Wrote several books including 'Wings of Fire' and 'Ignited Minds'.</li>
+                <li>President: Served as the 11th President of India from 2002 to 2007.</li>
+                <li>Teacher: After his presidency, continued to inspire students as a visiting professor.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2 class="slide-in-right">Last Day</h2>
+            <img src="https://th.bing.com/th/id/OIP.m7Ee1Hbic9e1-IyC071_VAHaFj?w=235&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Dr. Kalam Memorial" class="fade-in">
+            <p class="text fade-in-up">On 27th July 2015, Dr. A.P.J. Abdul Kalam collapsed while delivering a lecture at the Indian Institute of Management Shillong. He was rushed to the hospital but sadly passed away due to a cardiac arrest. His sudden demise left the entire nation in mourning. Dr. Kalam's legacy continues to inspire millions across the globe.</p>
+        </div>
+    </div>
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function() {
+        
+        });
+    </script>
+</body>
+</html>
